@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://liuyedao246.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Oct 2015 08:36:54 -0700</lastBuildDate>
+    
+	<atom:link href="http://liuyedao246.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>data.table包的用法</title>
+      <link>http://liuyedao246.github.io/post/2019-05-11-data.table%E5%8C%85%E7%9A%84%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sun, 25 Oct 2015 08:36:54 -0700</pubDate>
+      
+      <guid>http://liuyedao246.github.io/post/2019-05-11-data.table%E5%8C%85%E7%9A%84%E7%94%A8%E6%B3%95/</guid>
+      <description>data.table包的用法 R语言data.table包是自带包data.frame的升级版，用于数据框格式数据的处理，最大的特点快。包括两个方面，一方面是写的快，代码简洁，只要一行命令就可以完成诸多任务，另一方面是处理快，内部处理的步骤进行了程序上的优化，使用多线程，甚至很多函数是使用C写的，大大加快数据运行速度。因此，在对大数据处理上，使用data.table无疑具有极高的效率。这里我们主要讲的是它对数据框结构的快捷处理。
+fread fread(input, sep=&amp;quot;auto&amp;quot;, sep2=&amp;quot;auto&amp;quot;, nrows=-1L, header=&amp;quot;auto&amp;quot;, na.strings=&amp;quot;NA&amp;quot;, file, stringsAsFactors=FALSE,verbose=getOption(&amp;quot;datatable.verbose&amp;quot;), autostart=1L,skip=0L, select=NULL, drop=NULL, colClasses=NULL,integer64=getOption(&amp;quot;datatable.integer64&amp;quot;), # default: &amp;quot;integer64&amp;quot; dec=if (sep!=&amp;quot;.&amp;quot;) &amp;quot;.&amp;quot; else &amp;quot;,&amp;quot;, col.names, check.names=FALSE, encoding=&amp;quot;unknown&amp;quot;, quote=&amp;quot;\&amp;quot;&amp;quot;, strip.white=TRUE, fill=FALSE, blank.lines.skip=FALSE, key=NULL, showProgress=getOption(&amp;quot;datatable.showProgress&amp;quot;), # default: TRUE data.table=getOption(&amp;quot;datatable.fread.datatable&amp;quot;) # default: TRUE )  input输入的文件，或者字符串（至少有一个&amp;rdquo;\n&amp;rdquo;)； sep列之间的分隔符； sep2，分隔符内再分隔的分隔符，功能还没有应用； nrow，读取的行数，默认-l全部，nrow=0仅仅返回列名； header第一行是否是列名； na.strings,对NA的解释； file文件路径，再确保没有执行shell命令时很有用，也可以在input参数输入; stringsASFactors是否转化字符串为因子， verbose，是否交互和报告运行时间； autostart，机器可读这个区域任何行号，默认1L,如果这行是空，就读下一行; skip跳过读取的行数，为1则从第二行开始读，设置了这个选项，就会自动忽略autostart选项，也可以是一个字符,skip=&amp;ldquo;string&amp;rdquo;,那么会从包含该字符的行开始读； select,需要保留的列名或者列号，不要其它的； drop,需要取掉的列名或者列号，要其它的； colClasses，类字符矢量，用于罕见的覆盖而不是常规使用，只会使一列变为更高的类型，不能降低类型； integer64,读如64位的整型数; dec,小数分隔符，默认&amp;rdquo;.&amp;ldquo;不然就是&amp;rdquo;,&amp;rdquo; col.names,给列名，默认试用header或者探测到的，不然就是V+列号; encoding，默认&amp;rdquo;unknown&amp;rdquo;，其它可能&amp;rdquo;UTF-8&amp;rdquo;或者&amp;rdquo;Latin-1&amp;rdquo;，不是用来重新编码的，而是允许处理的字符串在本机编码; quote,默认&amp;rdquo;&amp;ldquo;&amp;ldquo;，如果以双引开头，fread强有力的处理里面的引号，如果失败了就会用其它尝试，如果设置quote=&amp;rdquo;&amp;ldquo;,默认引号不可用 strip.white，默认TRUE，删除结尾空白符，如果FALSE,只取掉header的结尾空白符； fill,默认FALSE，如果TRUE，不等长的区域可以自动填上，利于文件顺利读入； blank.lines.skip,默认FALSE,如果TRUE，跳过空白行 key，设置key，用一个或多个列名，会传递给setkey showProgress,TRUE会显示脚本进程，R层次的C代码 data.table,TRUE返回data.table，FALSE返回data.frame
+fwrite fwrite(x, file = &amp;quot;&amp;quot;, append = FALSE, quote = &amp;quot;auto&amp;quot;, sep = &amp;quot;,&amp;quot;, sep2 = c(&amp;quot;&amp;quot;,&amp;quot;|&amp;quot;,&amp;quot;&amp;quot;), eol = if (.</description>
+    </item>
+    
+  </channel>
+</rss>
